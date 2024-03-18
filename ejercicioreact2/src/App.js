@@ -14,11 +14,11 @@ function App() {
     </div>
     <BrowserRouter>
         <Routes>
-          <Route path='/' element={<FormulaCuadratica/>}></Route>
+          <Route path='/' element= {<FormulaCuadratica/>} />
         </Routes>
       </BrowserRouter> 
     </> 
-  );
+  )
 }
 
 export default App;

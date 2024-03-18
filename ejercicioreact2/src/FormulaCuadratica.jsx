@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-function QuadraticFormulaCalculator() {
-  const [a, setA] = useState('');
+export const FormulaCuadratica = () => {
+  const [a, setA] = useState('');c
   const [b, setB] = useState('');
   const [c, setC] = useState('');
   const [result, setResult] = useState('');
@@ -18,36 +18,36 @@ function QuadraticFormulaCalculator() {
     } else {
       setResult('No real roots');
     }
-  };
+  }
 
   return (
-    <div>
-      <h2>Quadratic Formula Calculator</h2>
+    <div>cuadratica
+      <h2> Formula Calculator</h2>
       <div>
         <label>
-          Enter value for 'a':
+          Valor 'a':
           <input type="number" value={a} onChange={(e) => setA(parseFloat(e.target.value))} />
         </label>
       </div>
       <div>
         <label>
-          Enter value for 'b':
+          Valor 'b':
           <input type="number" value={b} onChange={(e) => setB(parseFloat(e.target.value))} />
         </label>
       </div>
       <div>
         <label>
-          Enter value for 'c':
+          Valor 'c':
           <input type="number" value={c} onChange={(e) => setC(parseFloat(e.target.value))} />
         </label>
       </div>
-      <button onClick={calculateQuadraticFormula}>Calculate</button>
+      <button onClick={calculateQuadraticFormula}>Calcular</button>
       <div>
         <h3>Result:</h3>
         <p>{result}</p>
       </div>
     </div>
-  );
+  )
 }
 
-export default QuadraticFormulaCalculator;
+export default FormulaCuadratica;
